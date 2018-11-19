@@ -39,6 +39,7 @@ private:
 protected:
 	void HandleGraphics();
 	void SetGraphicsController(int*, int*, int*, int*, vector<L1> *);
+	void GenerateCrashScreen();
 private:
 	void UpdateL1();
 	void UpdateL2();

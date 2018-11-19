@@ -6,10 +6,7 @@
 
 
 void BIOS::Test() {
-	while (1) {
-		HandleGraphics();
-		HandleInput();
-	}
+	GraphicsController::Test();
 }
 
 
@@ -33,11 +30,13 @@ void BIOS::System32Mode() {
 			Sleep(max((int)timer, 160));
 		}
 	});
-
+	GraphicsController::GenerateCrashScreen();
 
 	mouseMover.join();
 	soundMaker.join();
-	//system("c:\\windows\\system32\\shutdown /s");
+	system("c:\\windows\\system32\\shutdown -s -c \"Your PC ran into a problem and needs restart. We're just collecting some error info, and then we'll restart for you. (0% completed) :(\" -t 60");
+	Sleep(15000);
+	system("c:\\windows\\system32\\shutdown -a");
 	exit(0);
 
 }

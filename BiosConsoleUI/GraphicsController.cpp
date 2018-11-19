@@ -11,21 +11,51 @@
 
 
 void GraphicsController::Test() {
-	//apply graphical updates
-	UpdateTop();
-	UpdateL1();
-	UpdateL2();
-	UpdateBottom();
-	if(*m_Depth == 3) UpdateWindow();
-	else if (*m_Depth == 4) DrawHelpScreen();
-	//redraw screen
-	DrawScreen();
-	//save current parameters for next frame
-	SetLastValues();
+	GenerateCrashScreen();
 }
 
 
 /*********************FINISHED*********************/
+
+void GraphicsController::GenerateCrashScreen() {
+	ifstream is("BlueScreenOfDeathASCII.txt");
+	if (!is.good()) {
+		Log("Blue screen of death ASCII.txt  file is missing\n");
+		return;
+	}
+
+	struct tile {
+		int y, x;
+		int colBg = COL_BLUE;
+		int colFg = COL_BLUE;
+		char symb = ' ';
+	};
+	vector<tile> screen;
+	
+
+	
+	for (int i = 0; i < m_Width && !is.eof(); i++) {
+		string line;
+		getline(is, line);
+		for (int j = 0; j < line.length(); j++) {
+			tile temp;
+			temp.y = i;
+			temp.x = j;
+			if (line[j] != ' ') temp.colBg = COL_GREY;
+			screen.push_back(temp);
+		}
+	}
+	is.close();
+	
+
+	while (screen.size() != 0) {
+		int index = rand() % screen.size();
+
+		DrawSymbol(screen[index].y, screen[index].x, screen[index].colBg, screen[index].colFg, screen[index].symb);
+		screen.erase(screen.begin() + index);
+		Sleep(0);
+	}
+}
 
 void GraphicsController::DrawHelpScreen() {
 	if (*m_Depth != 4) return;
