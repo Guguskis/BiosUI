@@ -1,0 +1,263 @@
+L1
+Information
+L2Static
+Product Name
+Lenovo Y520-15IKBN
+L2Static
+BIOS Version
+4KCN41WW
+L2Static
+EC Version
+4KEC41WW
+L2Static
+MTM
+80WK0020LT
+L2Static
+Lenovo SN
+PF0QW3PB
+L2Static
+UUID Number
+7C529C08-0926-11E7-979A-C85B76F7B181
+L2Static
+
+
+L2Static
+CPU
+Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
+L2Static
+System Memory
+8192MB
+L2Static
+Hard Disk 1
+Samsung SSD 960 EVO 250GB
+L2Static
+Hard Disk 2
+ST1000LM035-1RK172
+L2Static
+
+
+L2Static
+Preinstalled OS license
+SDK0J40709 WIN
+L2Static
+OA3 Key ID
+3259611585231
+L2Static
+OA2
+N
+L2Static
+Secure Boot Status
+Enabled
+L1
+Configuration
+L2Static
+System Time
+[Not Night]
+L2Static
+System Date
+[2018<=x<=2019]
+L2Static
+
+
+L2Editable
+Wireless LAN
+0
+This is Wireless LAN description
+L3Window
+Enabled
+L3Window
+Disabled
+L2Editable
+SATA Controller Mode
+0
+This is SATA Controller Mode description
+L3Window
+AHCI
+L3Window
+Intel RST Premium
+L2Editable
+Graphics device
+0
+Graphics device description
+L3Window
+Discrete
+L3Window
+UMA Only
+L2Editable
+Power Beep
+0
+Power Beep description
+L3Window
+Enabled
+L3Window
+Disabled
+L2Editable
+Intel Virtual Technology
+0
+Intel Virtual Technology description
+L3Window
+Enabled
+L3Window
+Disabled
+L2Editable
+BIOS Back Flash
+0
+BIOS Back Flash description
+L3Window
+Enabled
+L3Window
+Disabled
+L1
+Security
+L2Static
+Administrator Password
+Not Set
+L2Static
+User Password
+Not Set
+L2Static
+HDD Password
+Not Set
+L2Command
+Set Administrator Password
+Set or change the Administrator Password. Passwords must be at least one character in length. Administrator Password must be set in order to set a Power on Password and User Password.
+L2Static
+
+
+L2Command
+Set SATA Hard Disk Passwords
+Set Master and User hard drive passwords for all SATA hard drives. Passwords must be at least on character in length.
+L2Static
+
+
+L2Editable
+Intel Platform Trust Technology
+0
+Intel Platgorm Trust Technology description
+L3Window
+Enabled
+L3Window
+Disabled
+L2Command
+Clear Intel PTT Key
+Select or clear Intel PTT key.
+L2Static
+
+
+L2Static
+
+
+L2Editable
+Secure Boot
+0
+Enable or disable Secure Boot support.
+L3Window
+Enable
+L3Window
+Disable
+L2Static
+Secure Boot Status
+Enabled
+L2Static
+Platform Mode
+User Mode
+L2Static
+Secure Boot Mode
+Standard
+L2Command
+Reset to Setup Mode                    [Enter]
+Clear PK. disable secure boot and enter Setup Mode.
+L2Command
+Restore Factory Keys                   [Enter]
+Restore all secure boot database to factory default include PK, KEK, db and dbx.
+L1
+Boot
+L2Editable
+Boot Mode
+0
+Boot Mode description
+L3Window
+UEFI
+L3Window
+Legacy Support
+L2Editable
+Fast Boot
+1
+Enable or disable Fast Boot feature.           |Is this after new line at line start?
+L3Window
+Enabled
+L3Window
+Disabled
+L2Editable
+USB Boot
+0
+Enable or disable boot for USB device.
+L3Window
+Enabled
+L3Window
+Disabled
+L2Editable
+PXE Boot to LAN
+0
+Enable or disable PXE boot to LAN.
+L3Window
+Enabled
+L3Window
+Disabled
+L2Editable
+IPV4 PXE First
+0
+IPV4 PXE First this project looking good
+L3Window
+Enabled
+L3Window
+Disabled
+L2Static
+
+
+L2Static
+EFI
+
+L2Command
+Windows Boot Manager (ST1000LM035-1RK172)
+<up> / <down>:Select a device.                 F5: Move it down the list.                     F6: Move it up the list.                       Esc:Escape the menu.
+L2Command
+EFI PXE Network (C8-5B-76-F7-B1-81)
+<up> / <down>:Select a device.                 F5: Move it down the list.                     F6: Move it up the list.                       Esc:Escape the menu.
+L1
+Exit
+L2Command
+Exit Saving Changes
+Exit Setup and save your changes.
+L2Command
+Exit Discarding Changes
+Exit Setup without saving changes.
+L2Command
+Discard Changes
+Discard Changes made so far to any of the Setup Options.
+L2Command
+Save Changes
+Save Changes made so far to any of the Setup options.
+L2Static
+
+
+L2Command
+Load Default Settings
+Load default values for all Setup items.
+L2Editable
+OS Optimized Defaults
+0
+Set the BIOS default setting for pure UEFI mode or legacy support mode.
+L3Window
+Enabled
+L3Window
+Disabled
+L2Static
+
+
+L2Static
+
+
+L2Command
+Delete System32
+Unlocks the full speed of your computer
