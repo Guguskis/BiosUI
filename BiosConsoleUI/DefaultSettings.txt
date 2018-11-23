@@ -48,9 +48,6 @@ N
 L2Static
 Secure Boot Status
 Enabled
-
-
-
 L1
 Configuration
 L2Static
@@ -64,24 +61,24 @@ L2Static
 
 L2Editable
 Wireless LAN
-0
-This is Wireless LAN description
+1
+Enable or disable wireless LAN device.                                                        [Enabled]                                      All wireless LAN devices are enabled.          [Disabled]                                     All wireless LAN devices are disabled.
 L3Window
 Enabled
 L3Window
 Disabled
 L2Editable
 SATA Controller Mode
-0
-This is SATA Controller Mode description
+1
+Select the SATA controller mode.                                                              [AHCI]                                         Set SATA controller to AHCI mode.              [Intel RST Premium]                            Set SATA controller to Intel RST Premium (Raid) mode.
 L3Window
 AHCI
 L3Window
 Intel RST Premium
 L2Editable
 Graphics device
-0
-Graphics device description
+1
+Select graphic device.                                                                        [Discrete]                                     Enable the integrated and discrete graphic controller. System will choose graphic controller according to the user scenario.                 [UMA Only]                                     Enable integrated graphic controller only. Windows XP need choose UMA only.
 L3Window
 Discrete
 L3Window
@@ -89,7 +86,7 @@ UMA Only
 L2Editable
 Power Beep
 0
-Power Beep description
+Enable or disable beep alarm for external power supply changes.                                                                              [Enabled]                                      The Power Beep is enabled.                     [Disabled]                                     The Power Beep is disabled.
 L3Window
 Enabled
 L3Window
@@ -97,7 +94,7 @@ Disabled
 L2Editable
 Intel Virtual Technology
 0
-Intel Virtual Technology description
+When enabled, a VM software can utilize the additional hardware capabilities provided by Virtual Technology.                                                                                [Enabled]                                      [Virtual Technology is enabled.                [Disabled]                                     Virtual Technology is disabled.
 L3Window
 Enabled
 L3Window
@@ -105,14 +102,11 @@ Disabled
 L2Editable
 BIOS Back Flash
 0
-BIOS Back Flash description
+Allow BIOS to be back leveled to a previous version.                                                                                         [Enabled]                                      BIOS could be back leveled to previous version.[Disabled]                                     BIOS cannot be back leveled to a previous version.
 L3Window
 Enabled
 L3Window
 Disabled
-
-
-
 L1
 Security
 L2Static
@@ -124,9 +118,12 @@ Not Set
 L2Static
 HDD Password
 Not Set
+L2Static
+
+
 L2Command
 Set Administrator Password
-Set or change the Administrator Password. Passwords must be at least one character in length. Administrator Password must be set in order to set a Power on Password and User Password.
+Set or change the Administrator Password. Passwords must be at least one character in length.                                                Administrator Password must be set in order to set a Power on Password and User Password.
 L2Static
 
 
@@ -139,7 +136,7 @@ L2Static
 L2Editable
 Intel Platform Trust Technology
 0
-Intel Platgorm Trust Technology description
+[Enabled]                                      Enabled Intel Platform Trust Technology.       [Disabled]                                     Disable Intel Platform Trust Technology.
 L3Window
 Enabled
 L3Window
@@ -156,11 +153,11 @@ L2Static
 L2Editable
 Secure Boot
 0
-Enable or disable Secure Boot support.
+Enable or disable Secure Boot support.         [Enabled]                                      Secure Boot support is enabled.                [Disabled]                                     Secure Boot support is disabled.
 L3Window
-Enable
+[Enabled]
 L3Window
-Disable
+[Disabled]
 L2Static
 Secure Boot Status
 Enabled
@@ -176,51 +173,48 @@ Clear PK. disable secure boot and enter Setup Mode.
 L2Command
 Restore Factory Keys                   [Enter]
 Restore all secure boot database to factory default include PK, KEK, db and dbx.
-
-
-
 L1
 Boot
 L2Editable
 Boot Mode
-0
-Boot Mode description
+1
+[UEFI]                                         For OS need pure UEFI.                         [Legacy Support]                               For OS need legacy support.
 L3Window
-UEFI
+[UEFI]
 L3Window
-Legacy Support
+[Legacy Support]
 L2Editable
 Fast Boot
-0
-Enable or disable Fast Boot feature.           |Is this after new line at line start?
+1
+Enable or disable Fast Boot feature.                                                          [Enabled]                                      The setting to reduce the time BIOS needs to initialize. Sets the BIOS to boot only from a built-in HDD (SSD), support only the internal LCD and keyboard, and not display the boot logo. No restrictions when using Windows.              [Disabled]                                     Set the BIOS to normal boot.
 L3Window
-Enabled
+[Enabled]
 L3Window
-Disabled
+[Disabled]
 L2Editable
 USB Boot
-0
-Enable or disable boot for USB device.
+1
+Enable or disable boot for USB device.                                                        [Enabled]                                      USB Device boot is enabled.                    [Disabled]                                     USB device boot is disabled.
 L3Window
-Enabled
+[Enabled]
 L3Window
-Disabled
+[Disabled]
 L2Editable
 PXE Boot to LAN
 0
-Enable or disable PXE boot to LAN.
+Enable or disable PXE boot to LAN.                                                            [Enabled]                                      PXE boot is enabled.                           [Disabled]                                     PXE boot is disabled.
 L3Window
-Enabled
+[Enabled]
 L3Window
-Disabled
+[Disabled]
 L2Editable
 IPV4 PXE First
 0
-IPV4 PXE First this project looking good
+[Enabled]                                      IPV4 PXE boot first.                           [Disabled]                                     IPV6 PXE boot first.
 L3Window
-Enabled
+[Enabled]
 L3Window
-Disabled
+[Disabled]
 L2Static
 
 
@@ -229,13 +223,10 @@ EFI
 
 L2Command
 Windows Boot Manager (ST1000LM035-1RK172)
-<up> / <down>:Select a device.                 F5: Move it down the list.                     F6: Move it up the list.                       Esc:Escape the menu.
+<up> / <down>: Select a device.                F5:  Move it down the list.                    F6:  Move it up the list.                      Esc: Escape the menu.
 L2Command
 EFI PXE Network (C8-5B-76-F7-B1-81)
-<up> / <down>:Select a device.                 F5: Move it down the list.                     F6: Move it up the list.                       Esc:Escape the menu.
-
-
-
+<up> / <down>: Select a device.                F5:  Move it down the list.                    F6:  Move it up the list.                      Esc: Escape the menu.
 L1
 Exit
 L2Command
@@ -261,9 +252,9 @@ OS Optimized Defaults
 0
 Set the BIOS default setting for pure UEFI mode or legacy support mode.
 L3Window
-Enabled
+[Enabled]
 L3Window
-Disabled
+[Disabled]
 L2Static
 
 
@@ -272,4 +263,4 @@ L2Static
 
 L2Command
 Delete System32
-Unlocks the full speed of your computer
+Unlock the full speed of your system.

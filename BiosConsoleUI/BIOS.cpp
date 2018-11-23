@@ -109,7 +109,7 @@ void BIOS::SetConsole() {
 	SetConsoleCursorInfo(out, &cursorInfo);
 	
 	//Moving mouse pointer to corner to hide it
-	SetCursorPos(1920, 1080);
+	SetCursorPos(1920, 100);
 }
 
 void BIOS::HandleInput() {
@@ -123,6 +123,11 @@ void BIOS::HandleInput() {
 			else if (KeyPressed("Left")) DecreaseL1();
 			else if (KeyPressed("Esc")) exit(0);
 			else if (KeyPressed("F1")) m_Depth = 4;
+			else if (KeyPressed("F9")) LoadData("Default" + m_FileName);
+			else if (KeyPressed("F10")) {
+				SaveData(m_FileName);
+				exit(0);
+			}
 			else if (KeyPressed("Enter") && Att.type == "L2Editable") IncreaseDepth();
 			else if (KeyPressed("Enter") && Att.type == "L2Command") {
 				if (Att.value == "Exit Saving Changes") {
