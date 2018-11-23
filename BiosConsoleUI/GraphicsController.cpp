@@ -31,9 +31,9 @@ void GraphicsController::GenerateCrashScreen() {
 		char symb = ' ';
 	};
 	vector<tile> screen;
-	
 
-	
+
+
 	for (int i = 0; i < m_Width && !is.eof(); i++) {
 		string line;
 		getline(is, line);
@@ -46,7 +46,7 @@ void GraphicsController::GenerateCrashScreen() {
 		}
 	}
 	is.close();
-	
+
 
 	while (screen.size() != 0) {
 		int index = rand() % screen.size();
@@ -66,7 +66,7 @@ void GraphicsController::DrawHelpScreen() {
 	InsertBox(2, 0, 4, m_Length - 1, COL_GREY, COL_BLUE);
 	//inserting joints
 	InsertText(6, 0, string(1, 195), COL_GREY, COL_BLUE);
-	InsertText(6, m_Length-1, string(1, 180), COL_GREY, COL_BLUE);
+	InsertText(6, m_Length - 1, string(1, 180), COL_GREY, COL_BLUE);
 	//inserting title text
 	string text = "[General Help]";
 	int pozX = (m_Length - text.length()) / 2;
@@ -106,7 +106,7 @@ void GraphicsController::HandleGraphics() {
 	UpdateL1();
 	UpdateL2();
 	UpdateBottom();
-	if(*m_Depth == 3) UpdateWindow();
+	if (*m_Depth == 3) UpdateWindow();
 	else if (*m_Depth == 4) DrawHelpScreen();
 	//redraw screen
 	DrawScreen();
@@ -177,18 +177,18 @@ void GraphicsController::DrawScreen() {
 			if (frame.symb == ' ') {
 				if (frame.symb != frameLast.symb ||
 					frame.colBg != frameLast.colBg)
-						DrawSymbol(i, j, frame.colBg, frame.colFg, frame.symb);
+					DrawSymbol(i, j, frame.colBg, frame.colFg, frame.symb);
 			}
 			//current symbol is not space and any of parameters don't match
 			else {
-				if (frame.symb != frameLast.symb   ||
+				if (frame.symb != frameLast.symb ||
 					frame.colBg != frameLast.colBg ||
 					frame.colFg != frameLast.colFg)
-						DrawSymbol(i, j, frame.colBg, frame.colFg, frame.symb);
+					DrawSymbol(i, j, frame.colBg, frame.colFg, frame.symb);
 			}
 		}
 	}
-	
+
 }
 
 void GraphicsController::UpdateTop() {
@@ -257,7 +257,7 @@ void GraphicsController::UpdateL2() {
 	//total length
 	double ratio = 0.663;
 	int lineLength = m_Length * ratio;
-	
+
 	/*
 		Filling background space and inserting text on left side
 	*/
@@ -273,7 +273,7 @@ void GraphicsController::UpdateL2() {
 			}
 			else if (cAtt[i].type == "L2Editable") {
 				InsertText(i + 5, 1, cAtt[i].name, cBgCol, cTextCol);
-				InsertText(i + 5, 40, cAtt[i].window[cAtt[i].chosenValue].option, cBgCol, cTextCol);
+				InsertText(i + 5, 40, "[" + cAtt[i].window[cAtt[i].chosenValue].option + "]", cBgCol, cTextCol);
 			}
 			else if (cAtt[i].type == "L2Command") {
 				InsertText(i + 5, 1, cAtt[i].value, cBgCol, cTextCol);
@@ -286,7 +286,7 @@ void GraphicsController::UpdateL2() {
 			}
 			else if (cAtt[i].type == "L2Editable") {
 				InsertText(i + 5, 1, cAtt[i].name, bgCol, textCol);
-				InsertText(i + 5, 40, cAtt[i].window[cAtt[i].chosenValue].option, bgCol, textCol);
+				InsertText(i + 5, 40, "[" + cAtt[i].window[cAtt[i].chosenValue].option + "]", bgCol, textCol);
 			}
 			else if (cAtt[i].type == "L2Command") {
 				InsertText(i + 5, 1, cAtt[i].value, bgCol, textCol);

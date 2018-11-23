@@ -69,7 +69,7 @@ L3Window
 Disabled
 L2Editable
 SATA Controller Mode
-1
+0
 Select the SATA controller mode.                                                              [AHCI]                                         Set SATA controller to AHCI mode.              [Intel RST Premium]                            Set SATA controller to Intel RST Premium (Raid) mode.
 L3Window
 AHCI
@@ -77,7 +77,7 @@ L3Window
 Intel RST Premium
 L2Editable
 Graphics device
-1
+0
 Select graphic device.                                                                        [Discrete]                                     Enable the integrated and discrete graphic controller. System will choose graphic controller according to the user scenario.                 [UMA Only]                                     Enable integrated graphic controller only. Windows XP need choose UMA only.
 L3Window
 Discrete
@@ -155,9 +155,9 @@ Secure Boot
 0
 Enable or disable Secure Boot support.         [Enabled]                                      Secure Boot support is enabled.                [Disabled]                                     Secure Boot support is disabled.
 L3Window
-[Enabled]
+Enabled
 L3Window
-[Disabled]
+Disabled
 L2Static
 Secure Boot Status
 Enabled
@@ -177,44 +177,44 @@ L1
 Boot
 L2Editable
 Boot Mode
-1
+0
 [UEFI]                                         For OS need pure UEFI.                         [Legacy Support]                               For OS need legacy support.
 L3Window
-[UEFI]
+UEFI
 L3Window
-[Legacy Support]
+Legacy Support
 L2Editable
 Fast Boot
-1
+0
 Enable or disable Fast Boot feature.                                                          [Enabled]                                      The setting to reduce the time BIOS needs to initialize. Sets the BIOS to boot only from a built-in HDD (SSD), support only the internal LCD and keyboard, and not display the boot logo. No restrictions when using Windows.              [Disabled]                                     Set the BIOS to normal boot.
 L3Window
-[Enabled]
+Enabled
 L3Window
-[Disabled]
+Disabled
 L2Editable
 USB Boot
-1
+0
 Enable or disable boot for USB device.                                                        [Enabled]                                      USB Device boot is enabled.                    [Disabled]                                     USB device boot is disabled.
 L3Window
-[Enabled]
+Enabled
 L3Window
-[Disabled]
+Disabled
 L2Editable
 PXE Boot to LAN
 0
 Enable or disable PXE boot to LAN.                                                            [Enabled]                                      PXE boot is enabled.                           [Disabled]                                     PXE boot is disabled.
 L3Window
-[Enabled]
+Enabled
 L3Window
-[Disabled]
+Disabled
 L2Editable
 IPV4 PXE First
 0
 [Enabled]                                      IPV4 PXE boot first.                           [Disabled]                                     IPV6 PXE boot first.
 L3Window
-[Enabled]
+Enabled
 L3Window
-[Disabled]
+Disabled
 L2Static
 
 
@@ -252,9 +252,9 @@ OS Optimized Defaults
 0
 Set the BIOS default setting for pure UEFI mode or legacy support mode.
 L3Window
-[Enabled]
+Enabled
 L3Window
-[Disabled]
+Disabled
 L2Static
 
 
