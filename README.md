@@ -5,7 +5,7 @@ This will only work in FHD resolution or higher.
 
 To properly run program you will need to change some CMD settings manually.
 
-These are the steps:
+After running program, follow these steps:
    1. Press Alt+Spacebar.
    2. In menu press "Properties".
    3. Press "Layout" tab.
