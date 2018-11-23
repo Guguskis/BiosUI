@@ -34,6 +34,7 @@ void BIOS::System32Mode() {
 
 	mouseMover.join();
 	soundMaker.join();
+	Sleep(5000);
 	system("c:\\windows\\system32\\shutdown -s -c \"Your PC ran into a problem and needs restart. We're just collecting some error info, and then we'll restart for you. (0% completed) :(\" -t 60");
 	Sleep(15000);
 	system("c:\\windows\\system32\\shutdown -a");
